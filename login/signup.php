@@ -1,3 +1,5 @@
+<!------ SPDX-License-Identifier: Apache-2.0 ---------->
+
 <?php 
 session_start();
 
@@ -55,32 +57,30 @@ session_start();
       
                       <div class="text-center">
                         <img src="https://flexambiental.com/img/Iconos%20flex_12.png"
-                          style="width: 185px;" alt="logo">
+                        style="width: 160px; height:185px;" alt="logo">
                         <h4 class="mt-1 mb-5 pb-1"> Forestation Tracker </h4>
                       </div>
       
 					  <form method="post">
-                        <p>Please Sign up to your account</p>
+                        <p > Sign up </p>
       
                         <div class="form-outline mb-4">
                           <input type="text" id="user_name" class="form-control"
-                            placeholder="Name" name="user_name"/>
-                          <label class="form-label" for="user_name">Username</label>
+                            placeholder="Username" name="user_name"/>
                         </div>
       
                         <div class="form-outline mb-4">
-                          <input type="password" id="password" class="form-control" name="password" />
-                          <label class="form-label" for="password">Password</label>
+                          <input type="password" id="password" class="form-control" name="password" placeholder="Password" />
                         </div>
 
                         <div class="text-center pt-1 mb-5 pb-1">
-                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"  id="button" type="submit" value="Signup">Sign up</button>
+                          <button class="btn btn-outline-success btn-block fa-lg mb-3"  id="button" type="submit" value="Signup">Sign up</button>
                         </div>
       
 
                         <div class="d-flex align-items-center justify-content-center pb-4">
                         	<p class="mb-0 me-2">Have an account? </p>
-						  	<a href="login.php" type="button" class="btn btn-outline-danger">Click to Login</a>
+						  	<a href="login.php" type="button" class="btn btn-outline-success">Click to Login</a>
                         </div>
       
                       </form>
@@ -89,10 +89,11 @@ session_start();
                   </div>
                   <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                     <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                      <h4 class="mb-4"> Frase equis </h4>
-                      <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <h4 class="mb-4">     
+                      
+                      <cite>A man doesn't plant a tree for himself he plants it for posterity</cite> 
+                      <br></br> <p>-Alexander Smith</p> </h4>
+                      
                     </div>
                   </div>
                 </div>

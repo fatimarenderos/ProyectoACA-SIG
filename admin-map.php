@@ -4,7 +4,6 @@ include_once 'header.php';
 include_once 'locations_model.php';
 ?>
 
-
 <div id="map"></div>
 
 <!------ Include the above in your HEAD tag ---------->
