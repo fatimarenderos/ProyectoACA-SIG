@@ -98,8 +98,8 @@ session_start();
       
 
                         <div class="d-flex align-items-center justify-content-center pb-4">
-                        	<p class="mb-0 me-2">Don't have an account?</p>
-						  	<a href="signup.php" type="button" class="btn btn-outline-success">Click to Sign up</a>
+                            <p class="mb-0 me-2">Don't have an account?</p>
+                            <a href="signup.php" type="button" class="btn btn-outline-success">Click to Sign up</a>
                         </div>
       
                       </form>
@@ -111,8 +111,13 @@ session_start();
                       <h4 class="mb-4"> 
                       <cite>A man doesn't plant a tree for himself he plants it for posterity</cite> 
                       <br></br> <p>-Alexander Smith</p> </h4>
-                      
-                    
+                      <br> 
+                      <br> 
+                      <div class="d-flex align-items-center justify-content-center pb-4">
+                            <a href="../homepage.php" type="button" class="btn btn-outline-success">Home</a>
+                      </div>
+
+
                     </h4>
                       
                   </div>

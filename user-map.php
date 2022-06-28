@@ -1,13 +1,13 @@
 <!------ SPDX-License-Identifier: Apache-2.0 ---------->
 <?php
-include_once 'header.php';
+include_once 'headeruser.php';
 include 'locations_model.php';
 //get_unconfirmed_locations();exit;
 ?>
 
-    <script type="text/javascript"
+<script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyBjGcZbkVaH8J7wd1QrUUb3M_m5mF_Fd6k">
-    </script>
+</script>
 
     <div id="map"></div>
     <script>

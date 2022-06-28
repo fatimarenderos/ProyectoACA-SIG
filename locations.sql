@@ -8,7 +8,9 @@ CREATE TABLE `locations` (
   `goal` int(11) NOT NULL DEFAULT 1,
   `linkinformation` varchar(200) DEFAULT NULL,
   `description` varchar(200) NOT NULL,
-  `location_status` tinyint(1) DEFAULT 0
+  `location_status` tinyint(1) DEFAULT 0,
+  `nombreevento` varchar(50) NOT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

@@ -5,14 +5,14 @@
     
     /* Chrome 10-25, Safari 5.1-6 */
     /* background: -webkit-linear-gradient(to right, #61ee24, #92d836); */
-    background: radial-gradient(circle at 10% 20%, rgb(4, 159, 108) 0%, rgb(194, 254, 113) 90.1%);
+    /*background: radial-gradient(circle at 10% 20%, rgb(4, 159, 108) 0%, rgb(194, 254, 113) 90.1%);*/
 
-    
+
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /*background: linear-gradient(to right, #20BF55,#80FF72, #7EE8FA, #01BAEF); */
     /*background: radial-gradient(circle at 10% 20%, rgb(4, 159, 108) 0%, rgb(194, 254, 113) 90.1%);*/
-    background: radial-gradient(circle at 10% 20%, rgb(50, 172, 109) 0%, rgb(209, 251, 155) 100.2%);
-
+    background: linear-gradient(to right, rgba(95,204,38,1), rgba(91,224,16,1) , rgba(147,207,17,1) );
     }
     
     @media (min-width: 768px) {

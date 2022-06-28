@@ -93,6 +93,12 @@ session_start();
                       
                       <cite>A man doesn't plant a tree for himself he plants it for posterity</cite> 
                       <br></br> <p>-Alexander Smith</p> </h4>
+                      <br> 
+                      <br> 
+                      <div class="d-flex align-items-center justify-content-center pb-4">
+                            <a href="../homepage.php" type="button" class="btn btn-outline-success">Home</a>
+                      </div>
+
                       
                     </div>
                   </div>
