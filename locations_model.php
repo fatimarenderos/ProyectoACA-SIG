@@ -20,16 +20,24 @@ function add_location(){
     $lat = $_GET['lat'];
     $lng = $_GET['lng'];
     $description =$_GET['description'];
+    $nombreevento =$_GET['nombreevento'];
+    $organizer =$_GET['organizer'];
+    $eventdate =$_GET['eventdate'];
+    $goal =$_GET['goal'];
+    $location_status =$_GET['location_status'];
+
     // Inserts new row with place data.
     $query = sprintf("INSERT INTO locations "
-        . " (lat, lng, description,organizer,eventdate,goal) "
-        . " VALUES ('%s', '%s', '%s','%s','%date','%d');",
+        . " (lat, lng, description,nombreevento, organizer,eventdate,goal) "
+        . " VALUES ('%s', '%s', '%s','%s','%s','%date','%d');",
         mysqli_real_escape_string($con,$lat),
         mysqli_real_escape_string($con,$lng),
         mysqli_real_escape_string($con,$description),
+        mysqli_real_escape_string($con,$nombreevento),
         mysqli_real_escape_string($con,$organizer),
         mysqli_real_escape_string($con,$eventdate),
-        mysqli_real_escape_string($con,$goal));
+        mysqli_real_escape_string($con,$goal),
+        mysqli_real_escape_string($con,$location_status));
 
     $result = mysqli_query($con,$query);
     echo"Inserted Successfully";
@@ -59,7 +67,7 @@ function get_confirmed_locations(){
     }
     // update location with location_status if admin location_status.
     $sqldata = mysqli_query($con,"
-select id ,lat,lng,description,organizer,eventdate,goal,location_status as isconfirmed
+select id ,lat,lng,description,nombreevento, organizer,eventdate,goal,location_status as isconfirmed
 from locations WHERE  location_status = 1
   ");
 
@@ -85,7 +93,7 @@ function get_all_locations(){
     }
     // update location with location_status if admin location_status.
     $sqldata = mysqli_query($con,"
-select id ,lat,lng,description,organizer,eventdate,goal,location_status as isconfirmed
+select id ,lat,lng, description,nombreevento,organizer,eventdate,goal,location_status as isconfirmed
 from locations
   ");
 

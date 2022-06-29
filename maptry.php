@@ -8,7 +8,7 @@ include 'locations_model.php';
 <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyBjGcZbkVaH8J7wd1QrUUb3M_m5mF_Fd6k">
 </script>
-
+<link href="styles.css" rel="stylesheet" />
     <div id="map"></div>
     <script>
         /**
@@ -66,38 +66,45 @@ include 'locations_model.php';
                 map: map,
                 animation: google.maps.Animation.DROP,
                 id: 'marker_' + markerId,
-                html: "  <div id='info_"+markerId+"'>\n" +
-                    "        <table class=\"map1\">\n" +
-                    "            <tr>\n" +
-                    "                <td><a>Description:</a></td>\n" +
-                    "                <td><textarea  id='manual_description' placeholder='Description'></textarea></td></tr>\n" +
-                    "                <td><a>Organizer:</a></td>\n" +
-                    "                <td><textarea  id='manual_organizer' placeholder='Organizer'></textarea></td></tr>\n" +
-                    "            <tr><td></td><td><input type='button' value='Save' onclick='saveData("+lat+","+lng+")'/></td></tr>\n" +
-                    "        </table>\n" +
-                    "    </div> \n" +
-                    " <form> \n" +
-                    "    <div class='row'> \n" +
-                        "       <div class='col'> \n" +
-                        "      <input type='text' class='form-control' placeholder='First name'>  \n" +
-                        "     </div>  \n" +
-                        "     <div class='col'>  \n" +
-                        "     <input type='text' class='form-control' placeholder='Last name'>  \n" +
-                        "      </div>  \n" +
-                            "  </div>  \n" +
-                            " </form> \n" +
+                html: "  <div id='info_"+markerId+"' >\n" +   
+                          "  <div class='container forget-password' > \n" +
+                          "<div class='row'> \n" +
+                          " <div class='col-md-12 col-md-offset-4'> \n" +
+                          "  <div class='panel panel-default'>\n" +
+                          " <div class='panel-body'>\n" +
+                        "     <div class='text-center'>\n" +
+                        " <img src='https://flexambiental.com/img/Iconos%20flex_12.png' style='width: 160px; height: 185px' alt='logo' >\n" +
 
-                          "  <div class= 'card border-success mb-3' style='max-width: 18rem;'>\n" +
-                          " <div class='card-header'>Header</div> \n" +
-                          " <div class='card-body text-success'> \n" +
-                          "  <h5 class='card-title'>Success card title</h5> \n" +
-                          "  <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p> \n" +
-                          
-                          " <div class='form-group'> \n" +
-                           " <button id='guarda' name='update' type='submit' class='btn btn-outline-success'>Update Event</button>\n" +
-                           " <a href='events.php' class='btn btn-outline-warning'> Go Back</a> \n" +
+                        "     <h2 class='text-center'>E-TRAKER</h2>\n" +
+                        "    <p>You can add your event here.</p>\n" +
+                        "  <form id='register-form' role='form' autocomplete='off' class='form' method='post'>\n" +
+                        "     <div class='form-group'>\n" +
+                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Event Name' class='form-control'  type='text'>\n" +
+                        "    </div> <br> \n" +
+                        "     <div class='form-group'>\n" +
+                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Organizer' class='form-control'  type='text'>\n" +
+                        "    </div> <br> \n" +
+                        "     <div class='form-group'>\n" +
+                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Description' class='form-control'  type='text'>\n" +
+                        "    </div> <br> \n" +
+                        "      <div class='form-group'>\n" +
+                        "     <div class='input-group'> \n" +
+                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Event Date' class='form-control'  type='date'>\n" +
+                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Goal' class='form-control'  type='number'>\n" +
 
-                           "</div> \n" +
+                        "     </div> </div><br> \n" +
+                        "      <div class='form-group'>\n" +
+                        "          <input name='btnForget' class='btn btn-lg btn-primary btn-block btnForget' value='Save Event' type='submit'>  \n" +
+                        "     </div><br> \n"  +
+                        
+                        "  </form>\n" +
+                        "   </div>\n" +
+                        "  </div>\n" +
+                        "</div>\n" +
+                        "  </div>\n" +
+                        " </div>\n" +
+                        "  </div>\n" +
+                        
                           " </div> \n" +
                           " </div>  "
                     
