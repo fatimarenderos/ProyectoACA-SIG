@@ -44,7 +44,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Reforestation Tracker!</div>
+                <div class="masthead-subheading">Welcome To E-Tracker!</div>
                 <div class="masthead-heading text-uppercase">Nice To have You here</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">See More</a>
             </div>
