@@ -75,8 +75,7 @@ session_start();
                     <div class="card-body p-md-5 mx-md-4">
       
                       <div class="text-center">
-                        <img src="https://flexambiental.com/img/Iconos%20flex_12.png"
-                          style="width: 160px; height: 185px" alt="logo" >
+                        <img src="https://flexambiental.com/img/Iconos%20flex_12.png" style="width: 160px; height: 185px" alt="logo" >
                         <h4 class="mt-1 mb-5 pb-1"> Forestation Tracker </h4>
                       </div>
       
