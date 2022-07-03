@@ -66,46 +66,24 @@ include 'locations_model.php';
                 map: map,
                 animation: google.maps.Animation.DROP,
                 id: 'marker_' + markerId,
-                html: "  <div id='info_"+markerId+"' >\n" +   
-                          "  <div class='container forget-password' > \n" +
-                          "<div class='row'> \n" +
-                          " <div class='col-md-12 col-md-offset-4'> \n" +
-                          "  <div class='panel panel-default'>\n" +
-                          " <div class='panel-body'>\n" +
-                        "     <div class='text-center'>\n" +
-                        " <img src='https://flexambiental.com/img/Iconos%20flex_12.png' style='width: 160px; height: 185px' alt='logo' >\n" +
+                html: "  <div class= 'mt-3' id='info_"+markerId+"' >\n" +   
+                
+                "		<div class=' d-flex align-items-center justify-content-center'> \n" + 
+							"	<img src='https://flexambiental.com/img/Iconos%20flex_12.png' style='width: 130px; height: 150px' alt='logo'> \n" + 
+							"		</div> \n" + 
+                            " <form> \n" + 
+                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br> \n" + 
+                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
+                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
+                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
+                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
+                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
+                                " <input type='button' class='btn btn-outline-warning justify-content-center' value='Save' onclick='saveData("+lat+","+lng+")'/>\n" + 
+                            " </form> \n" + 
 
-                        "     <h2 class='text-center'>E-TRAKER</h2>\n" +
-                        "    <p>You can add your event here.</p>\n" +
-                        "  <form id='register-form' role='form' autocomplete='off' class='form' method='post'>\n" +
-                        "     <div class='form-group'>\n" +
-                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Event Name' class='form-control'  type='text'>\n" +
-                        "    </div> <br> \n" +
-                        "     <div class='form-group'>\n" +
-                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Organizer' class='form-control'  type='text'>\n" +
-                        "    </div> <br> \n" +
-                        "     <div class='form-group'>\n" +
-                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Description' class='form-control'  type='text'>\n" +
-                        "    </div> <br> \n" +
-                        "      <div class='form-group'>\n" +
-                        "     <div class='input-group'> \n" +
-                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Event Date' class='form-control'  type='date'>\n" +
-                        "            <input id='forgetAnswer' name='forgetAnswer' placeholder='Goal' class='form-control'  type='number'>\n" +
 
-                        "     </div> </div><br> \n" +
-                        "      <div class='form-group'>\n" +
-                        "          <input name='btnForget' class='btn btn-lg btn-primary btn-block btnForget' value='Save Event' type='submit'>  \n" +
-                        "     </div><br> \n"  +
-                        
-                        "  </form>\n" +
-                        "   </div>\n" +
-                        "  </div>\n" +
-                        "</div>\n" +
-                        "  </div>\n" +
-                        " </div>\n" +
-                        "  </div>\n" +
-                        
-                          " </div> \n" +
+                            
+                            
                           " </div>  "
                     
             });

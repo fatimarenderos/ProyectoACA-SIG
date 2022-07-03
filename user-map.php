@@ -73,32 +73,23 @@ include 'locations_model.php';
                     "                <td><textarea  id='manual_description' placeholder='Description'></textarea></td></tr>\n" +
                     "                <td><a>Organizer:</a></td>\n" +
                     "                <td><textarea  id='manual_organizer' placeholder='Organizer'></textarea></td></tr>\n" +
-                    "            <tr><td></td><td><input type='button' value='Save' onclick='saveData("+lat+","+lng+")'/></td></tr>\n" +
+                    "                <td><a>manual_nombreevento:</a></td>\n" +
+                    "                <td><textarea  id='manual_nombreevento' placeholder='Description'></textarea></td></tr>\n" +
+                    "                <td><a>manual_eventdate:</a></td>\n" +
+                    "                <td><textarea  id='manual_eventdate' placeholder='Organizer'></textarea></td></tr>\n" +
+
+                    "                <td><a>manual_eventgoal:</a></td>\n" +
+                    "                <td><textarea  id='manual_eventgoal' placeholder='Organizer'></textarea></td></tr>\n" +
+
+
+
+
+                    "            <tr><td></td><td><input type='button' class='btn btn-outline-warning' value='Save' onclick='saveData("+lat+","+lng+")'/></td></tr>\n" +
                     "        </table>\n" +
-                    "    </div> \n" +
-                    " <form> \n" +
-                    "    <div class='row'> \n" +
-                        "       <div class='col'> \n" +
-                        "      <input type='text' class='form-control' placeholder='First name'>  \n" +
-                        "     </div>  \n" +
-                        "     <div class='col'>  \n" +
-                        "     <input type='text' class='form-control' placeholder='Last name'>  \n" +
-                        "      </div>  \n" +
-                            "  </div>  \n" +
-                            " </form> \n" +
+                    
 
-                          "  <div class= 'card border-success mb-3' style='max-width: 18rem;'>\n" +
-                          " <div class='card-header'>Header</div> \n" +
-                          " <div class='card-body text-success'> \n" +
-                          "  <h5 class='card-title'>Success card title</h5> \n" +
-                          "  <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p> \n" +
-                          
-                          " <div class='form-group'> \n" +
-                           " <button id='guarda' name='update' type='submit' class='btn btn-outline-success'>Update Event</button>\n" +
-                           " <a href='events.php' class='btn btn-outline-warning'> Go Back</a> \n" +
 
-                           "</div> \n" +
-                          " </div> \n" +
+                        
                           " </div>  "
                     
             });
@@ -155,17 +146,15 @@ include 'locations_model.php';
                 map: map,
                 icon :   locations[i][4] === '1' ?  red_icon  : purple_icon,
                 html: "<div>\n" +
-                "<table class=\"map1\">\n" +
-                "<tr>\n" +
-                "<td><a>Description:</a></td>\n" +
-                "<td><textarea disabled id='manual_description' placeholder='Description'>"+locations[i][3]+"</textarea></td></tr>\n" +
-                "</table>\n" +
-                "</div> \n" +
+                
+    
+                "  <div class= ' text-center border-success mb-3 \"map1\" ' style='max-width: 18rem;'>\n" +
+                          " <div class='card-body text-success'> \n" +
+                          "  <h4 class='card-title'>"+locations[i][4]+"</h4> \n" +
+                          "  <h5 class='card-title'>"+locations[i][5]+"</h5> \n" +
+                          "  <h5 class='card-title'>"+locations[i][6]+"</h5> \n" +
+                          " </div> \n" +
 
-
-                "<div class='form-group'> \n" +
-                 "   <button id='guarda' name='update' type='submit' class='btn btn-outline-success'>Update Event</button>\n" +
-                 "     <a href='events.php' class='btn btn-outline-warning'> Go Back</a> \n" +
 
                   " </div>  "
             });
@@ -177,6 +166,10 @@ include 'locations_model.php';
                     $("#confirmed").prop(confirmed,locations[i][4]);
                     $("#id").val(locations[i][0]);
                     $("#description").val(locations[i][3]);
+                    $("#nombreevento").val(locations[i][4]);
+                    $("#organizer").val(locations[i][5]);
+                    $("#eventdate").val(locations[i][6]);
+                    $("#goal").val(locations[i][7]);
                     $("#form").show();
                     infowindow.setContent(marker.html);
                     infowindow.open(map, marker);
@@ -191,14 +184,19 @@ include 'locations_model.php';
          */
         function saveData(lat,lng) {
             var description = document.getElementById('manual_description').value;
-            var url = 'locations_model.php?add_location&description=' + description + '&lat=' + lat + '&lng=' + lng;
+            var nombreevento = document.getElementById('manual_nombreevento').value;
+            var organizer = document.getElementById('manual_organizer').value;
+            var eventdate = document.getElementById('manual_eventdate').value;
+            var goal = document.getElementById('manual_eventgoal').value;
+
+            var url = 'locations_model.php?add_location&description=' + description + '&lat=' + lat + '&lng=' + lng + '&nombreevento=' + nombreevento + '&organizer=' + organizer + '&eventdate=' + eventdate + '&goal=' + goal  ;
             downloadUrl(url, function(data, responseCode) {
                 if (responseCode === 200  && data.length > 1) {
                     var markerId = getMarkerUniqueId(lat,lng); // get marker id by using clicked point's coordinate
                     var manual_marker = markers[markerId]; // find marker
                     manual_marker.setIcon(purple_icon);
                     infowindow.close();
-                    infowindow.setContent("<div style=' color: purple; font-size: 25px;'> Waiting for admin confirm!!</div>");
+                    infowindow.setContent(" <h2  > <span style='color:#B29B35;'> Wait for confirmation! /span> </h2> ");
                     infowindow.open(map, manual_marker);
 
                 }else{
