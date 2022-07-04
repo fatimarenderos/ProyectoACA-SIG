@@ -66,31 +66,22 @@ include 'locations_model.php';
                 map: map,
                 animation: google.maps.Animation.DROP,
                 id: 'marker_' + markerId,
-                html: "  <div id='info_"+markerId+"'>\n" +
-                    "        <table class=\"map1\">\n" +
-                    "            <tr>\n" +
-                    "                <td><a>Description:</a></td>\n" +
-                    "                <td><textarea  id='manual_description' placeholder='Description'></textarea></td></tr>\n" +
-                    "                <td><a>Organizer:</a></td>\n" +
-                    "                <td><textarea  id='manual_organizer' placeholder='Organizer'></textarea></td></tr>\n" +
-                    "                <td><a>manual_nombreevento:</a></td>\n" +
-                    "                <td><textarea  id='manual_nombreevento' placeholder='Description'></textarea></td></tr>\n" +
-                    "                <td><a>manual_eventdate:</a></td>\n" +
-                    "                <td><textarea  id='manual_eventdate' placeholder='Organizer'></textarea></td></tr>\n" +
+                html: "  <div class= 'mt-3' id='info_"+markerId+"' >\n" +   
+                            "	<div class=' d-flex align-items-center justify-content-center'> \n" + 
+                                        "	<img src='https://flexambiental.com/img/Iconos%20flex_12.png' style='width: 80px; height: 100px' alt='logo'> \n" + 
+                            "   </div> \n" + 
 
-                    "                <td><a>manual_eventgoal:</a></td>\n" +
-                    "                <td><textarea  id='manual_eventgoal' placeholder='Organizer'></textarea></td></tr>\n" +
-
-
-
-
-                    "            <tr><td></td><td><input type='button' class='btn btn-outline-warning' value='Save' onclick='saveData("+lat+","+lng+")'/></td></tr>\n" +
-                    "        </table>\n" +
-                    
-
-
-                        
-                          " </div>  "
+                            " <div class='text-center'>   <h5 class=' text-success'>New Event</h5>  </div>  \n" + 
+                            
+                            " <form> \n" + 
+                                " <input type='text' id='manual_nombreevento' class='form-control' placeholder='Event Name' > <br> \n" + 
+                                " <input type='text' id='manual_organizer' class='form-control' placeholder='Event Organizer' > <br>\n" + 
+                                " <input type='text' id='manual_description' class='form-control'  placeholder='Event Description' > <br>\n" + 
+                                " <input type='date' id='manual_eventdate' class='form-control' placeholder='Event Date' > <br>\n" + 
+                                " <input type='number' id='manual_eventgoal' class='form-control' placeholder='Event Goal input' > <br>\n" + 
+                                " <div class='text-center' > <input type='button' class='btn btn-outline-warning text-center' value='Save' onclick='saveData("+lat+","+lng+")'/> </div>  \n" + 
+                           " </form> \n" + 
+                    " </div>  "      
                     
             });
             markers[markerId] = marker; // cache marker in markers object
@@ -144,15 +135,14 @@ include 'locations_model.php';
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                 map: map,
-                icon :   locations[i][4] === '1' ?  red_icon  : purple_icon,
+                icon :   locations[i][8] === '1' ? purple_icon   : red_icon,
                 html: "<div>\n" +
                 
-    
-                "  <div class= ' text-center border-success mb-3 \"map1\" ' style='max-width: 18rem;'>\n" +
+                "  <div class= ' text-left border-success mb-3 \"map1\" ' style='max-width: 18rem;'>\n" +
                           " <div class='card-body text-success'> \n" +
-                          "  <h4 class='card-title'>"+locations[i][4]+"</h4> \n" +
-                          "  <h5 class='card-title'>"+locations[i][5]+"</h5> \n" +
-                          "  <h5 class='card-title'>"+locations[i][6]+"</h5> \n" +
+                          "  <h5 class='card-title'>  Event Name: " +locations[i][4]+"  </h5> \n" +
+                          "  <p class='card-title'>Event Organizer: "+locations[i][5]+"</p> \n" +
+                          "  <p class='card-title'> Event Date: "+locations[i][6]+"</p> \n" +
                           " </div> \n" +
 
 
@@ -162,8 +152,8 @@ include 'locations_model.php';
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                 return function() {
                     infowindow = new google.maps.InfoWindow();
-                    confirmed =  locations[i][4] === '1' ?  'checked'  :  0;
-                    $("#confirmed").prop(confirmed,locations[i][4]);
+                    confirmed =  locations[i][7] === '1' ?  'checked'  :  0;
+                    $("#confirmed").prop(confirmed,locations[i][7]);
                     $("#id").val(locations[i][0]);
                     $("#description").val(locations[i][3]);
                     $("#nombreevento").val(locations[i][4]);
@@ -188,15 +178,20 @@ include 'locations_model.php';
             var organizer = document.getElementById('manual_organizer').value;
             var eventdate = document.getElementById('manual_eventdate').value;
             var goal = document.getElementById('manual_eventgoal').value;
+            console.log(eventdate);
+        
 
             var url = 'locations_model.php?add_location&description=' + description + '&lat=' + lat + '&lng=' + lng + '&nombreevento=' + nombreevento + '&organizer=' + organizer + '&eventdate=' + eventdate + '&goal=' + goal  ;
+            
+            console.log(url);
+
             downloadUrl(url, function(data, responseCode) {
                 if (responseCode === 200  && data.length > 1) {
                     var markerId = getMarkerUniqueId(lat,lng); // get marker id by using clicked point's coordinate
                     var manual_marker = markers[markerId]; // find marker
                     manual_marker.setIcon(purple_icon);
                     infowindow.close();
-                    infowindow.setContent(" <h2  > <span style='color:#B29B35;'> Wait for confirmation! /span> </h2> ");
+                    infowindow.setContent(" <h2  > <span style='color:#d1be41;'> Wait for confirmation! </h2> ");
                     infowindow.open(map, manual_marker);
 
                 }else{

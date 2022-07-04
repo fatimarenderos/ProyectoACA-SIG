@@ -67,24 +67,21 @@ include 'locations_model.php';
                 animation: google.maps.Animation.DROP,
                 id: 'marker_' + markerId,
                 html: "  <div class= 'mt-3' id='info_"+markerId+"' >\n" +   
-                
-                "		<div class=' d-flex align-items-center justify-content-center'> \n" + 
-							"	<img src='https://flexambiental.com/img/Iconos%20flex_12.png' style='width: 130px; height: 150px' alt='logo'> \n" + 
-							"		</div> \n" + 
+                            "	<div class=' d-flex align-items-center justify-content-center'> \n" + 
+                                        "	<img src='https://flexambiental.com/img/Iconos%20flex_12.png' style='width: 130px; height: 150px' alt='logo'> \n" + 
+                            "   </div> \n" + 
+
+                            " <div class='text-center'>   <h4 class=' text-success'>New Event</h4>  </div>  \n" + 
+                            
                             " <form> \n" + 
-                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br> \n" + 
-                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
-                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
-                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
-                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
-                                " <input type='text' class='form-control' placeholder='Readonly input' readonly> <br>\n" + 
-                                " <input type='button' class='btn btn-outline-warning justify-content-center' value='Save' onclick='saveData("+lat+","+lng+")'/>\n" + 
-                            " </form> \n" + 
-
-
-                            
-                            
-                          " </div>  "
+                                " <input type='text' class='form-control' placeholder='Event Name' > <br> \n" + 
+                                " <input type='text' class='form-control' placeholder='Event Organizer' > <br>\n" + 
+                                " <input type='text' class='form-control' placeholder='Event Description' > <br>\n" + 
+                                " <input type='date' class='form-control' placeholder='Event Date' > <br>\n" + 
+                                " <input type='number' class='form-control' placeholder='Event Goal input' > <br>\n" + 
+                                " <div class='text-center' > <input type='button' class='btn btn-outline-warning text-center' value='Save' onclick='saveData("+lat+","+lng+")'/> </div>  \n" + 
+                           " </form> \n" + 
+                    " </div>  "
                     
             });
             markers[markerId] = marker; // cache marker in markers object

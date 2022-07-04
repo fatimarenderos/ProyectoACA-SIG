@@ -160,7 +160,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://i0.wp.com/epthinktank.eu/wp-content/uploads/2022/02/EPRS-AaG-698936-New-EU-forest-strategy-2030-FINAL.png?fit=820%2C820&ssl=1" alt="..." /></div>
+                        <div class="timeline-image"><img class=" rounded-circle" src="https://i0.wp.com/epthinktank.eu/wp-content/uploads/2022/02/EPRS-AaG-698936-New-EU-forest-strategy-2030-FINAL.png?fit=820%2C820&ssl=1" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>March 21 </h4>
