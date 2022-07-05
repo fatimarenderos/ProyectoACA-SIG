@@ -2,7 +2,7 @@
 
 <?php
 require 'conexion.php';
-
+// Se verifican los datos
     if  (isset($_GET['id'])) {
         $id = $mysqli->real_escape_string($_GET['id']);
         $sql = "SELECT id, nombreevento, lat, lng, organizer, eventdate, goal, linkinformation, description FROM locations where id= $id";
@@ -11,7 +11,7 @@ require 'conexion.php';
 
         echo "<script>console.log({$id})</script>"; 
     }
-
+//Actualizacion de datos del evento
     if (isset($_POST['update'])) {
         $id = $mysqli->real_escape_string($_POST['id']);
         $nameE = $mysqli->real_escape_string($_POST['nameE']);
@@ -37,7 +37,7 @@ require 'conexion.php';
     
 ?>
 
-
+<!--esturctura HTML Editar evento-->
 <!doctype html>
   <html lang="es">
   <head>
