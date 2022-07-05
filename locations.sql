@@ -4,7 +4,7 @@ CREATE TABLE `locations` (
   `lat` decimal(10,6) NOT NULL,
   `lng` decimal(10,6) NOT NULL,
   `organizer` varchar(200) NOT NULL,
-  `eventdate` date NOT NULL DEFAULT current_timestamp(),
+  `eventdate` varchar(200) NOT NULL DEFAULT current_timestamp(),
   `goal` int(11) NOT NULL DEFAULT 1,
   `linkinformation` varchar(200) DEFAULT NULL,
   `description` varchar(200) NOT NULL,

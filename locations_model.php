@@ -29,7 +29,7 @@ function add_location(){
     // Inserts new row with place data.
     $query = sprintf("INSERT INTO locations "
         . " (lat, lng, description,nombreevento, organizer,eventdate,goal) "
-        . " VALUES ('%s', '%s', '%s','%s','%s','%date','%d');",
+        . " VALUES ('%s', '%s', '%s','%s','%s','%s','%d');",
         mysqli_real_escape_string($con,$lat),
         mysqli_real_escape_string($con,$lng),
         mysqli_real_escape_string($con,$description),
