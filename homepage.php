@@ -1,5 +1,3 @@
-<!------ SPDX-License-Identifier: Apache-2.0 ---------->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,14 +14,13 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/logo.svg" alt="..." /></a>-->
-                <a class="navbar-brand" href="#page-top">E-Tracker</a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -35,14 +32,13 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Dates</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="login/login.php">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login/signup.php">Sing up</a></li>
-
+                        <li class="nav-item"><a class="nav-link" href="login/signup.php">Sing up</a></li>>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead"  style="background-image: url(../assets/img/map-image-bg.jpg");">
             <div class="container">
                 <div class="masthead-subheading">Welcome To E-Tracker!</div>
                 <div class="masthead-heading text-uppercase">Nice To have You here</div>
@@ -88,7 +84,7 @@
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Learn more</h2>
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row">
@@ -160,7 +156,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class=" rounded-circle" src="https://i0.wp.com/epthinktank.eu/wp-content/uploads/2022/02/EPRS-AaG-698936-New-EU-forest-strategy-2030-FINAL.png?fit=820%2C820&ssl=1" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://i0.wp.com/epthinktank.eu/wp-content/uploads/2022/02/EPRS-AaG-698936-New-EU-forest-strategy-2030-FINAL.png?fit=820%2C820&ssl=1" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>March 21 </h4>
