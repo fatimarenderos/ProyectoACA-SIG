@@ -5,8 +5,8 @@ include_once 'locations_model.php';
 ?>
 
 <div id="map"></div>
-
 <!------ Include the above in your HEAD tag ---------->
+
 <script>
     var map;
     var marker;

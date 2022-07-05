@@ -32,7 +32,7 @@ session_start();
 ?>
 
 
-
+<!-------Creación del HTML de signup------->
 
 
 <!DOCTYPE html>

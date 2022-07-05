@@ -1,4 +1,7 @@
 -- SPDX-License-Identifier: Apache-2.0
+
+
+
 CREATE TABLE `locations` (
   `id` int(11) NOT NULL,
   `lat` decimal(10,6) NOT NULL,

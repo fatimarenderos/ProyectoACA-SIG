@@ -1,4 +1,7 @@
 <!------ SPDX-License-Identifier: Apache-2.0 ---------->
+
+
+<!--Estructura HTML y estilo para tomar el mapa pantalla completa-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +26,7 @@
         height: 100%;
     }
 </style>
-
+      <!--HTML barra superior-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container text-uppercase">
         <a class="navbar-brand" href="#page-top">E-Tracker</a>
@@ -45,6 +48,6 @@
 
 
   </nav>
-
+<!--Estilo de la API de Google Maps-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 

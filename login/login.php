@@ -16,8 +16,8 @@ session_start();
 
 		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
 		{
-
-			//read from database
+	     //read from database
+		
 			$query = "select * from users where user_name = '$user_name' limit 1";
 			$result = mysqli_query($con, $query);
 
@@ -52,7 +52,7 @@ session_start();
 	}
 
 ?>
-
+<!-------Creación del HTML de login------->
 
 <!DOCTYPE html>
 <html lang="en">

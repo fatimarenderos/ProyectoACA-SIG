@@ -83,8 +83,8 @@ INSERT INTO `users` (`id`, `user_id`, `user_name`, `password`, `date`) VALUES
 --
 
 --
--- Indices de la tabla `locations`
---
+-- 
+--Indices de la tabla `locations`
 ALTER TABLE `locations`
   ADD PRIMARY KEY (`id`);
 
