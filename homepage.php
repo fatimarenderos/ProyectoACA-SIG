@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title> E-tracker</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -88,8 +88,7 @@
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Learn more</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Learn more</h2> <br>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -129,7 +128,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="https://leafly-cms-production.imgix.net/wp-content/uploads/2019/05/20100144/reddit-cleanup.jpg" alt="..." />
+                                <img class="mx-auto" src="https://leafly-cms-production.imgix.net/wp-content/uploads/2019/05/20100144/reddit-cleanup.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Cleaning Campaign</div>
@@ -180,7 +179,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://cdn.pixabay.com/photo/2019/10/27/15/51/nature-4582137_960_720.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="mx-auto rounded-circle " src="https://cdn.pixabay.com/photo/2019/10/27/15/51/nature-4582137_960_720.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>June 5</h4>
@@ -212,7 +211,7 @@
                 <div class="row">
                     <div class="col-lg-4 ">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="..." />
                             <h4>Madeline Clará</h4>
                             <p class="text-muted">Programmer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -222,7 +221,7 @@
                     </div>
                     <div class="col-lg-4 ">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="..." />
                             <h4>Fátima Renderos</h4>
                             <p class="text-muted">Programmer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -232,7 +231,7 @@
                     </div>
                     <div class="col-lg-4 ">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="..." />
                             <h4>Rocío Landaverde</h4>
                             <p class="text-muted">Programmer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -245,7 +244,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="..." />
                             <h4>Carlos Flores</h4>
                             <p class="text-muted">Programmer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -255,7 +254,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="..." />
                             <h4>César Esperanza</h4>
                             <p class="text-muted">Programmer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>

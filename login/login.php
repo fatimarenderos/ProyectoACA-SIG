@@ -1,7 +1,6 @@
 <!------ SPDX-License-Identifier: Apache-2.0 ---------->
 
 <?php 
-
 session_start();
 
 	include("connection.php");
@@ -62,8 +61,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
-</head>
+    <title> E-tracker</title></head>
 <body>
     <section class="h-100 gradient-form" style="background-color: #eee;" >
         <div class="container py-5 h-100">
