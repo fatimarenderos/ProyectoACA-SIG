@@ -35,7 +35,7 @@ $resultado = $mysqli->query($sql);
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> 
 
-  <title> Eventos</title>
+  <title> E-tracker Events</title>
 </head>
 <body id="page-top" >
 
