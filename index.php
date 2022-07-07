@@ -34,7 +34,7 @@
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Learn More</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Dates</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login/login.php">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo url('login/login.php') ?>">Login</a></li>
                         <li class="nav-item"><a class="nav-link" href="login/signup.php">Sing up</a></li>
 
                     </ul>
