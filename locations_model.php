@@ -13,7 +13,11 @@ if(isset($_GET['confirm_location'])) {
 
 
 function add_location(){
-    $con=mysqli_connect ("localhost", 'root', '','demo');
+    //Development Connection
+    //$con=mysqli_connect ("localhost", 'root', '','demo');
+    
+    //Remote Connection
+    $con=mysqli_connect ("remotemysql.com", 'g8YDNdy1RT', '2K8Va42nsG','g8YDNdy1RT');
     if (!$con) {
         die('Not connected : ' . mysqli_connect_error());
     }
@@ -46,7 +50,11 @@ function add_location(){
     }
 }
 function confirm_location(){
-    $con=mysqli_connect ("localhost", 'root', '','demo');
+    //Development Connection
+    //$con=mysqli_connect ("localhost", 'root', '','demo');
+    
+    //Remote Connection
+    $con=mysqli_connect ("remotemysql.com", 'g8YDNdy1RT', '2K8Va42nsG','g8YDNdy1RT');
     if (!$con) {
         die('Not connected : ' . mysqli_connect_error());
     }
@@ -61,7 +69,11 @@ function confirm_location(){
     }
 }
 function get_confirmed_locations(){
-    $con=mysqli_connect ("localhost", 'root', '','demo');
+    //Development Connection
+    //$con=mysqli_connect ("localhost", 'root', '','demo');
+    
+    //Remote Connection
+    $con=mysqli_connect ("remotemysql.com", 'g8YDNdy1RT', '2K8Va42nsG','g8YDNdy1RT');
     if (!$con) {
         die('Not connected : ' . mysqli_connect_error());
     }
@@ -87,7 +99,11 @@ from locations WHERE  location_status = 1
     }
 }
 function get_all_locations(){
-    $con=mysqli_connect ("localhost", 'root', '','demo');
+    //Development Connection
+    //$con=mysqli_connect ("localhost", 'root', '','demo');
+    
+    //Remote Connection
+    $con=mysqli_connect ("remotemysql.com", 'g8YDNdy1RT', '2K8Va42nsG','g8YDNdy1RT');
     if (!$con) {
         die('Not connected : ' . mysqli_connect_error());
     }
