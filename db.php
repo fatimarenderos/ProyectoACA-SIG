@@ -1,7 +1,13 @@
 <!------ SPDX-License-Identifier: Apache-2.0 ---------->
 <?php
 // Opens a connection to a MySQL server.
-$connection=mysqli_connect ("localhost", 'root', '','demo');
+
+//Development Connection
+//$connection=mysqli_connect ("localhost", 'root', '','demo');
+
+//Remote Connection
+$connection=mysqli_connect ("remotemysql.com", 'g8YDNdy1RT', '2K8Va42nsG','g8YDNdy1RT');
+
 if (!$connection) {
     die('Not connected : ' . mysqli_connect_error());
 }
