@@ -95,7 +95,7 @@ session_start();
                       <br> 
                       <br> 
                       <div class="d-flex align-items-center justify-content-center pb-4">
-                            <a href="../homepage.php" type="button" class="btn btn-outline-success">Home</a>
+                            <a href="../index.php" type="button" class="btn btn-outline-success">Home</a>
                       </div>
 
                       
