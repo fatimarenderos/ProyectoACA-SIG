@@ -5,7 +5,7 @@
 //Development Connection
 //$connection=mysqli_connect ("localhost", 'root', '','demo');
 
-//Remote Connection
+//Estableciendo conexion remota con la base de datos
 $connection=mysqli_connect ("remotemysql.com", 'g8YDNdy1RT', '2K8Va42nsG','g8YDNdy1RT');
 
 if (!$connection) {
