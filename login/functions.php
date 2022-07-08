@@ -2,6 +2,7 @@
 
 <?php
 
+//funcion para chequear el login
 function check_login($con)
 {
 
@@ -25,7 +26,7 @@ function check_login($con)
 
 }
 
-
+//funcion generadora de numero al azar
 function random_num($length)
 {
 
