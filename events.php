@@ -1,11 +1,11 @@
 <!------ SPDX-License-Identifier: Apache-2.0 ---------->
 
+<!-- Ruta de conexion a la base de datos remota-->
 <?php
 require 'conexion.php';
 $sql = "SELECT id, nombreevento, organizer, eventdate, goal, linkinformation, description FROM locations";
 
 $resultado = $mysqli->query($sql);
-
 ?>
 
 
@@ -39,14 +39,15 @@ $resultado = $mysqli->query($sql);
 </head>
 <body id="page-top" >
 
-<!-- Navigation-->
-  
+
+<!-- HTML para la barra de navegacion-->
               
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container text-uppercase">
         <a class="navbar-brand" href="#page-top">E-Tracker</a>
         
    
+
     <ul class="navbar-nav ">
                     <li class="nav-item active">
                     <a class="nav-link" href="index.php">Home</a>
@@ -71,6 +72,7 @@ $resultado = $mysqli->query($sql);
     <br>
     <br>
 
+    <!-- HTML para desplegar los eventos -->
 
     <div class="row">
           <?php while ($fila = $resultado->fetch_assoc()) { ?>
@@ -93,7 +95,7 @@ $resultado = $mysqli->query($sql);
                 </div>
 
               </div>
-           <?php }?>
+           <?php } ?>
     </div>
 
     
