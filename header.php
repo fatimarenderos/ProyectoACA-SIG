@@ -12,21 +12,25 @@
 
 </head>
 <body>
+
+<!--Comienza la etiqueta de css-->
 <style>
 
-    /* Optional: Makes the sample page fill the window. */
+    
+    /*Opcional: Hace que la pagina rellene la ventana completa*/
     html, body {
         height: 100%;
         margin: 0;
         padding: 0;
     }
- /* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
+ 
+ /*Se establece la altura del div que contiene el mapa de manera explicita */
     #map {
         height: 100%;
     }
 </style>
-      <!--HTML barra superior-->
+      
+      <!--HTML del la barra de navegacion -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container text-uppercase">
         <a class="navbar-brand" href="#page-top">E-Tracker</a>
