@@ -2,6 +2,7 @@
 
 <?php
 
+//Funcion para hacer log out de sesion
 session_start();
 
 if(isset($_SESSION['user_id']))

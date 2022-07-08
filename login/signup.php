@@ -7,12 +7,14 @@ session_start();
 	include("functions.php");
 
 
+//funcion para validar creacion de nuevo usuario/admin
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
 
+    //si los campos estan completos y correctos
 		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
 		{
 
@@ -24,7 +26,7 @@ session_start();
 
 			header("Location: ../user-map.php");
 			die;
-		}else
+		}else //en caso el usuario o password no sean validos o estan vacios
 		{
 			echo "Please enter some valid information!";
 		}

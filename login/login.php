@@ -13,6 +13,7 @@ session_start();
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
 
+    //si los campos estan completos y correctos
 		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
 		{
 	     //read from database
@@ -25,6 +26,8 @@ session_start();
 				if($result && mysqli_num_rows($result) > 0)
 				{
 
+          //validando el login
+          //validando si el username ingresado es admin o usuario
 					$user_data = mysqli_fetch_assoc($result);
 					if(($user_data['user_name'] === 'admin')){
 

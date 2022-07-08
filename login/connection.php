@@ -8,7 +8,7 @@
 //$dbpass = "";
 //$dbname = "demo";
 
-//Remote database
+//Configuracion para base de datos remota
 $dbhost = "remotemysql.com";
 $dbuser = "g8YDNdy1RT";
 $dbpass = "2K8Va42nsG";
